@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCircuit EMS - Electronic Manufacturing Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
+            background-size: cover;
+            padding: 8rem 0;
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+        }
+        
+        .service-card {
+            height: 100%;
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .expertise-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .expertise-icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+        
+        .industry-card {
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            background-color: var(--light-color);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .industry-card:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .industry-card i {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .industry-card:hover i {
+            color: white;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .features-list li {
+            margin-bottom: 1rem;
+        }
+
+        .features-list i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechCircuit EMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="expertise.html">Expertises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Core Services -->
+    <section class="py-5" id="services">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Core EMS Offerings</h2>
+                    <p class="lead">Comprehensive manufacturing solutions to bring your electronic products to life.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-microchip service-icon"></i>
+                            <h4 class="mb-3">PCB Assembly & Manufacturing</h4>
+                            <p>Precision-engineered printed circuit boards (PCBs) for various industrial applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-drafting-compass service-icon"></i>
+                            <h4 class="mb-3">Prototyping & Design Services</h4>
+                            <p>Rapid prototyping and engineering support to accelerate product development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-truck service-icon"></i>
+                            <h4 class="mb-3">Supply Chain & Logistics</h4>
+                            <p>Streamlining procurement, inventory management, and distribution for maximum efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-cogs service-icon"></i>
+                            <h4 class="mb-3">Electromechanical Assembly</h4>
+                            <p>Expertise in assembling complex electronic and mechanical systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-check-double service-icon"></i>
+                            <h4 class="mb-3">Testing & Quality Assurance</h4>
+                            <p>Comprehensive testing to ensure compliance, reliability, and performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-tools service-icon"></i>
+                            <h4 class="mb-3">Aftermarket Services</h4>
+                            <p>Repair, refurbishment, and lifecycle management for electronic products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value-Added Services -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Value-Added Services</h2>
+                    <p class="lead">Going beyond manufacturing to support your complete product lifecycle.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-primary">
+                                <i class="fas fa-sync-alt fa-3x"></i>
+                            </div>
+                            <h4>Lifecycle Management & Aftermarket Support</h4>
+                            <p>Product repair, refurbishment, and rework services to extend the life of your electronics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-primary">
+                                <i class="fas fa-microscope fa-3x"></i>
+                            </div>
+                            <h4>Failure Analysis & Reliability Testing</h4>
+                            <p>Ensuring long-term performance under operational conditions with thorough testing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-primary">
+                                <i class="fas fa-box fa-3x"></i>
+                            </div>
+                            <h4>Custom Packaging & Labeling</h4>
+                            <p>Branding and serialization for traceability through the supply chain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h4 class="mb-4">TechCircuit EMS</h4>
+                        <p>Your trusted partner in electronic manufacturing services, delivering high-quality solutions for various industries.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                            <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                            <li class="mb-2"><a href="#industries" class="text-white text-decoration-none">Industries</a></li>
+                            <li class="mb-2"><a href="#expertise" class="text-white text-decoration-none">Expertise</a></li>
+                            <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-4">Our Services</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-white text-decoration-none">PCB Assembly</a></li>
+                            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Prototyping</a></li>
+                            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Supply Chain Management</a></li>
+                            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Testing & Quality Assurance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <p>Subscribe to our newsletter for the latest updates and industry insights.</p>
+                        <form class="mt-3">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4 bg-light">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-0">&copy; 2025 TechCircuit EMS. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Custom JS -->
+        <script>
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        const navbarCollapse = document.getElementById('navbarNav');
+                        if (navbarCollapse.classList.contains('show')) {
+                            document.querySelector('.navbar-toggler').click();
+                        }
+                    }
+                });
+            });
+            
+            // Add shadow to navbar on scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow');
+                } else {
+                    navbar.classList.remove('shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
