@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCircuit EMS - Electronic Manufacturing Services</title>
+    <title>21 VisionTek - Electronic Manufacturing Services</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -145,13 +145,30 @@
         .bg-primary {
             background-color: var(--primary-color) !important;
         }
+
+        .value-added-card {
+            transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+        }
+        .value-added-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            z-index: 2;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        .value-added-card:active {
+            transform: translateY(-18px) scale(1.05);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+        }
+
+        .navbar-brand {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">TechCircuit EMS</a>
+            <a class="navbar-brand fw-bold" href="#"><span class="visiontek-font">21 VisionTek</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -253,7 +270,7 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm value-added-card">
                         <div class="card-body p-4">
                             <div class="mb-4 text-primary">
                                 <i class="fas fa-sync-alt fa-3x"></i>
@@ -264,7 +281,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm value-added-card">
                         <div class="card-body p-4">
                             <div class="mb-4 text-primary">
                                 <i class="fas fa-microscope fa-3x"></i>
@@ -275,7 +292,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0 shadow-sm value-added-card">
                         <div class="card-body p-4">
                             <div class="mb-4 text-primary">
                                 <i class="fas fa-box fa-3x"></i>
@@ -295,7 +312,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <h4 class="mb-4">TechCircuit EMS</h4>
+                        <h4 class="mb-4">21 VisionTek</h4>
                         <p>Your trusted partner in electronic manufacturing services, delivering high-quality solutions for various industries.</p>
                         <div class="mt-4">
                             <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
@@ -323,25 +340,15 @@
                             <li class="mb-2"><a href="#" class="text-white text-decoration-none">Testing & Quality Assurance</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h5 class="mb-4">Newsletter</h5>
-                        <p>Subscribe to our newsletter for the latest updates and industry insights.</p>
-                        <form class="mt-3">
-                            <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
-                                <button class="btn btn-primary" type="button">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
                 <hr class="my-4 bg-light">
                 <div class="row">
                     <div class="col-md-6 mb-3 mb-md-0">
-                        <p class="mb-0">&copy; 2025 TechCircuit EMS. All rights reserved.</p>
+                        <p class="mb-0">&copy; 2025 21 VisionTek. All rights reserved.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
-                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                        <a href="#" class="text-white text-decoration-none me-3"></a>
+                        <a href="#" class="text-white text-decoration-none"></a>
                     </div>
                 </div>
             </div>
