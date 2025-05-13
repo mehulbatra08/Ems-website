@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0d6efd;
+            --primary-color: #585481;
             --secondary-color: #6c757d;
             --dark-color: #212529;
             --light-color: #f8f9fa;
@@ -20,10 +20,27 @@
         }
         
         .hero-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(88, 84, 129, 0.85)), url('Bg-Hero.png') no-repeat center center;
             background-size: cover;
             padding: 8rem 0;
             color: white;
+            position: relative;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .hero-section > * {
+            position: relative;
+            z-index: 2;
         }
         
         .section-title {
@@ -117,6 +134,34 @@
             color: var(--primary-color);
             margin-right: 0.5rem;
         }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #4a4769;
+            border-color: #4a4769;
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
     </style>
 </head>
 <body>
@@ -130,7 +175,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Services</a>
@@ -146,96 +191,72 @@
             </div>
         </div>
     </nav>
-<section class="py-5" id="expertise">
+<section class="py-5 bg-light" id="expertise">
     <div class="container py-5">
         <div class="row mb-5">
-            <div class="col-lg-6">
+            <div class="mx-auto text-start">
                 <h2 class="section-title">Our Technical Expertise</h2>
                 <p class="lead">Industry-leading capabilities for electronic manufacturing.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6 mb-5">
-                <h3 class="mb-4">Advanced Manufacturing & Assembly</h3>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>High-Precision PCB Assembly</h5>
-                        <p>Surface mount technology (SMT) and through-hole assembly with automated inspection.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Electromechanical Integration</h5>
-                        <p>Full system assembly including wiring, enclosures, and thermal management.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Automated Testing & Quality Control</h5>
-                        <p>Functional, in-circuit, and environmental testing to ensure compliance.</p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-industry fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Advanced Manufacturing & Assembly</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>High-Precision PCB Assembly</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Electromechanical Integration</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Automated Testing & Quality Control</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-5">
-                <h3 class="mb-4">Advanced PCB Design & Manufacturing</h3>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Multi-Layer PCBs (Up to 12 Layers and Beyond)</h5>
-                        <p>High-density interconnect (HDI) designs for compact, high-performance electronics.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>High-Speed PCB Design</h5>
-                        <p>Signal integrity optimization for RF, IoT, and telecommunications applications.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Rigid-Flex & Flexible PCBs</h5>
-                        <p>Ideal for compact devices and wearables, ensuring durability and space efficiency.</p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-microchip fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Advanced PCB Design & Manufacturing</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Multi-Layer PCBs (Up to 12+ Layers)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>High-Speed PCB Design</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Rigid-Flex & Flexible PCBs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-5">
-                <h3 class="mb-4">Component & Package Handling</h3>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Ball Grid Array (BGA) Assembly</h5>
-                        <p>Precision placement with X-ray inspection to ensure high reliability.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Fine-Pitch SMD Placement</h5>
-                        <p>Handling complex surface-mount devices with ultra-fine pitches (down to 0.3mm).</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Microelectronics & Chip-On-Board (COB)</h5>
-                        <p>Advanced die bonding and wire bonding techniques for semiconductor packaging.</p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-cubes fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Component & Package Handling</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Ball Grid Array (BGA) Assembly</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Fine-Pitch SMD Placement</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Microelectronics & COB</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-5">
-                <h3 class="mb-4">Engineering & Prototyping</h3>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Design for Manufacturing (DFM)</h5>
-                        <p>Optimized designs for cost, efficiency, and scalability.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Rapid Prototyping</h5>
-                        <p>Quick turnaround for proof-of-concept validation.</p>
-                    </div>
-                </div>
-                <div class="expertise-item d-flex">
-                    <div class="expertise-content">
-                        <h5>Custom Firmware & Software Development</h5>
-                        <p>Embedded systems programming for industrial electronics.</p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-tools fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Engineering & Prototyping</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Design for Manufacturing (DFM)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Rapid Prototyping</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Custom Firmware & Software</li>
+                        </ul>
                     </div>
                 </div>
             </div>

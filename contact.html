@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0d6efd;
+            --primary-color: #585481;
             --secondary-color: #6c757d;
             --dark-color: #212529;
             --light-color: #f8f9fa;
@@ -20,7 +20,7 @@
         }
         
         .hero-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
+            background: linear-gradient(rgba(88, 84, 129, 0.8), rgba(88, 84, 129, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
             background-size: cover;
             padding: 8rem 0;
             color: white;
@@ -117,6 +117,34 @@
             color: var(--primary-color);
             margin-right: 0.5rem;
         }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #4a4769;
+            border-color: #4a4769;
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
     </style>
 </head>
 <body>
@@ -130,7 +158,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Services</a>
@@ -198,6 +226,24 @@
                                 </div>
                                 <button type="submit" class="btn btn-lg w-100" style="background-color: #585481;color: #f8f9fa;">Send Message</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title mb-4">Our Location</h2>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9 rounded-bottom overflow-hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14612.975409527537!2d90.497437!3d23.7029844!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1589867989634!5m2!1sen!2sbd" style="border:0; width:100%; height:100%; min-height:350px;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

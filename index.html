@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0d6efd;
+            --primary-color: #585481;
             --secondary-color: #6c757d;
             --dark-color: #212529;
             --light-color: #f8f9fa;
@@ -20,10 +20,27 @@
         }
         
         .hero-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/api/placeholder/1200/600') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(88, 84, 129, 0.85)), url('Bg-Hero.png') no-repeat center center;
             background-size: cover;
             padding: 8rem 0;
             color: white;
+            position: relative;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .hero-section > * {
+            position: relative;
+            z-index: 2;
         }
         
         .section-title {
@@ -117,6 +134,45 @@
             color: var(--primary-color);
             margin-right: 0.5rem;
         }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #4a4769;
+            border-color: #4a4769;
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+
+        @font-face {
+            font-family: 'EximaGeometric';
+            src: url('Exima Geometric.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .visiontek-font {
+            font-family: 'EximaGeometric', Arial, sans-serif !important;
+        }
     </style>
 </head>
 <body>
@@ -130,7 +186,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Services</a>
@@ -152,10 +208,70 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="display-4 fw-bold mb-4"> 21 VisionTek </h1>
+                    <h1 class="display-4 fw-bold mb-4 visiontek-font"> 21 VisionTek </h1>
                     <h1 class="display-5 fw-bold mb-4">Your Trusted Partner in Electronic Manufacturing Services (EMS)</h1>
                     <!-- <a href="#contact" class="btn btn-light btn-lg px-5 py-3 me-3">Get Started</a>
                     <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">About Us</h2>
+                    <div class="about-content">
+                        <p class="lead mb-4">Founded in 1999, our company has been a trusted name in Electronic manufacturing services (EMS) for over 26 years. Based in Singapore we specialize in design, assembly, production, and testing of high-quality electronic components and PCB assemblies.</p>
+                        
+                        <p class="mb-4">With a commitment to innovation and precision, we have grown into a leading EMS provider, serving industries such as automotive, telecommunications, medical devices, and consumer electronics. Our state-of-the-art facilities and expert team ensure that every product meets the highest standards of quality and reliability.</p>
+                        
+                        <p class="mb-4">At the heart of our success is a dedication to customer satisfaction. We work closely with our clients to develop customized solutions, leveraging the latest technologies to optimize efficiency and performance.</p>
+                        
+                        <p>As we continue to evolve, we remain focused on sustainability, cutting-edge advancements, and delivering excellence in electronic manufacturing. Whether you need prototyping, mass production, or specialized engineering support, we are here to bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-history fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">26+ Years</h4>
+                                    <p class="mb-0">Of Industry Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-globe-asia fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Singapore</h4>
+                                    <p class="mb-0">Headquarters</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">State-of-the-Art</h4>
+                                    <p class="mb-0">Manufacturing Facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Expert Team</h4>
+                                    <p class="mb-0">Dedicated Professionals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
